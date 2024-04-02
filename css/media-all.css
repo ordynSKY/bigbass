@@ -1,0 +1,43 @@
+@media (max-width: 992px){
+    .header-logo h1{
+        font-size: 22px;
+    }
+}
+@media(max-width: 760px){
+    .section--header .row{
+        flex-direction: column !important;
+    }
+    .section--about .row{
+        flex-direction: column-reverse !important;
+    }
+    .section--stats .row{
+        flex-direction: column !important;
+    }
+    .stats--block__item{
+        text-align: center;
+        flex-direction: column !important;
+    }
+    .section--stats .infobox{
+        margin-bottom: 30px;
+    }
+    .section--order .row{
+        flex-direction: column !important;
+    }
+    .testimonials--block__item{
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .contact--list{
+        flex-direction: column !important;
+    }
+    .section--contact h1{
+        text-align: center;
+    }
+    .section--privacy .row{
+        flex-direction: column !important;
+    }
+
+}
+@media(max-width: 480px){
+
+}

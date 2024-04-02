@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bigbassbonanz</title>
+    <meta property="og:title" content="Przedstawiamy " slottica="" styles"=""
+    -="" twoje="" najlepsze="" miejsce="" dla="" doskonałości="" mody"="">
+    <meta property="og:image" content="images/1705519800.webp" />
+
+    <meta property="og:description" content="Przedstawiamy " slottica=""
+    styles"="" -="" twoje="" najlepsze="" miejsce="" dla="" doskonałości=""
+    mody"=""> <meta name="description" content="Przedstawiamy " slottica=""
+    styles"="" -="" twoje="" najlepsze="" miejsce="" dla="" doskonałości=""
+    mody"="">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/date.js"></script>
+    <link rel="shortcut icon" href="images/logotip.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/fancybox-bt.css" />
+    <link rel="stylesheet" href="css/icons-bt.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/btn-random-5.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link rel="shortcut icon" href="images/logotip.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-all.css" />
+  </head>
+
+  <body class="xG7LZYH_40">
+    <header class="header navbar flex-row" id="top">
+      <div class="navbar-container">
+        <button class="header-burger-btn" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html">
+          <div class="header-logo color-text">
+            <img class="img-logo" src="images/logob.png" />
+          </div>
+        </a>
+        <nav class="navbar-wrap">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutusid">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviewid">Strategy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./#contactid">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="outerPlayItem"
+      id="gameContainer"
+      style="display: flex; justify-content: center"
+    >
+      <!-- XSLT Template -->
+      <style>
+        .divtimer {
+          position: absolute;
+          top: 10px;
+          height: 32px;
+          background: #77ad1b;
+          color: #fff;
+          padding: 4px 12px;
+          cursor: pointer;
+          margin: 5px;
+          z-index: 49;
+          font-size: 12px;
+          line-height: 20px;
+          display: none;
+        }
+        .divtimerFullScr {
+          position: absolute;
+          top: 10px;
+          height: 32px;
+          background: #77ad1b;
+          color: #fff;
+          padding: 4px 12px;
+          cursor: pointer;
+          margin: 5px;
+          z-index: 49;
+          font-size: 12px;
+          line-height: 20px;
+          display: none;
+        }
+        .divtimer2 {
+          border: none;
+          position: absolute;
+          top: 10px;
+          height: 32px;
+          background: #ffb80c;
+          color: #000;
+          padding: 4px 12px;
+          cursor: pointer;
+          margin: 5px;
+          z-index: 49;
+          font-size: 12px;
+          line-height: 20px;
+        }
+        .divtimer2FullScr {
+          border: none;
+          position: absolute;
+          top: 10px;
+          height: 32px;
+          background: #ffb80c;
+          color: #000;
+          padding: 4px 12px;
+          cursor: pointer;
+          margin: 5px;
+          z-index: 49;
+          font-size: 12px;
+          line-height: 20px;
+        }
+        #aDiv {
+          position: absolute;
+          top: 0px;
+          z-index: 48;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          display: none;
+          background: rgba(0, 0, 0, 0.9);
+        }
+        #aDivFullScr {
+          position: absolute;
+          top: 0px;
+          z-index: 148;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          display: none;
+          background: rgba(0, 0, 0, 0.9);
+        }
+        #demo-game-a {
+          clear: both;
+          padding: 0;
+        }
+        #demo-game-a-popup {
+          clear: both;
+          padding: 0;
+        }
+
+        #atop {
+          height: 30px;
+        }
+        .navbar-container {
+          width: 100%;
+        }
+        .container {
+          background: url(/img-slot/demobg.jpg) 50% 50% repeat;
+          background-size: cover;
+          position: absolute;
+          width: 100%;
+          padding-top: 56.25%; /* 75%  56.25% 16:9 Aspect Ratio */
+        }
+        @media (max-width: 430px) {
+          .container {
+            height: 700px;
+          }
+          .navbar-container {
+            justify-content: space-between;
+          }
+        }
+        @media (max-width: 390px) {
+          .container {
+            height: 600px;
+          }
+        }
+        .iframeGame {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+        .outerPlayItemAd .outerPlayItemInAd {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #252525;
+        }
+        .innerPlayItemAd {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .innerPlayItem_inAd {
+          width: 60%;
+          margin: 0 auto;
+        }
+        .prCasinoLogoBlockAd {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          width: 100%;
+          float: left;
+        }
+        .prCasinoLogoBlockAd .overlay-link {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          float: left;
+        }
+        .prCasinoLogoAd .flag {
+          padding: 0;
+          margin: 0 0 -24px 0;
+          height: 24px;
+          width: 24px;
+          float: right;
+        }
+        .prCasinoLogoAd .flag img {
+          z-index: 3;
+          float: left;
+          margin: 0;
+          padding: 0;
+          height: auto;
+          width: 100%;
+          -webkit-border-radius: 0 !important;
+          -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+        }
+        .prCasinoLogoAd {
+          height: 110px;
+          width: 110px;
+          margin: 0 auto;
+          padding: 0;
+          z-index: 3;
+          position: relative;
+        }
+        .prCasinoLogoAd img {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+        }
+        .bonusItemTextAd {
+          padding: 0;
+          margin: 7px 0 10px 0;
+          float: left;
+          width: 100%;
+          color: #ffffff;
+          font-size: 24px;
+          line-height: 26px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .battonPlayAd {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          width: 100%;
+          height: 50px;
+          font-weight: 600;
+          float: left;
+          font-size: 18px;
+          line-height: 50px;
+          text-align: center;
+          text-decoration: none;
+          -webkit-border-radius: 100px;
+          border-radius: 100px;
+          color: #111;
+          background: rgba(255, 204, 0, 1);
+          background: -moz-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -webkit-gradient(
+            left top,
+            left bottom,
+            color-stop(0%, rgba(255, 204, 0, 1)),
+            color-stop(100%, rgba(244, 173, 31, 1))
+          );
+          background: -webkit-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -o-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -ms-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: linear-gradient(
+            to bottom,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#f4ad1f', GradientType=0 );
+        }
+        .battonPlayAd span {
+          padding: 0 22px 0 0;
+          color: #111;
+          margin: 0;
+          position: relative;
+          background-image: url(/img-slot/battonplay.png);
+          background-position: 100% 50%;
+          background-repeat: no-repeat;
+        }
+        .battonPlayAd:hover {
+          background: #ffcc00;
+        }
+        .playRealTcaAd {
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: 400;
+          padding: 10px;
+          margin: 5px 0 0 0;
+          float: left;
+          color: #c2c2c2;
+          width: 100%;
+        }
+        .bonusClaimApplyLineAd {
+          padding: 0 0 5px 0;
+          margin: 0 20%;
+          width: 60%;
+          float: left;
+          font-size: 12px;
+          color: #c2c2c2;
+          line-height: 16px;
+          text-align: center;
+          font-weight: 400;
+          display: block;
+        }
+        .allPromoAd {
+          text-decoration: underline;
+          outline: 0;
+          border: 0;
+          color: #c2c2c2;
+        }
+        .allPromoAd:hover {
+          text-decoration: none;
+          color: #c2c2c2;
+        }
+        .otherLinkAd {
+          position: relative;
+          width: 46%;
+          float: left;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+          padding: 4px 15px 5px 15px;
+          margin: 10px 2% 0 2%;
+          color: #c2c2c2;
+          text-decoration: none;
+          text-align: center;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          border: #c2c2c2 1px solid;
+          background: #252525;
+        }
+        .otherLinkAd:hover {
+          background: #111111;
+          color: #c2c2c2;
+        }
+        .reloadPageBlock {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .reloadPage_in {
+          width: 65%;
+          margin: 0 auto;
+        }
+        .reloadPage {
+          position: relative;
+          width: 80%;
+          font-size: 20px;
+          font-weight: 600;
+          background: #252525;
+          padding: 5px;
+          margin: 15px 10% 10px 10%;
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+          text-align: center;
+          text-transform: uppercase;
+          border: #fff 1px solid;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          float: left;
+        }
+        .reloadPage:hover {
+          color: #fff;
+          border: #fff 1px solid;
+        }
+        .reloadPage-text {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+          background: none;
+          padding: 0;
+          margin: 0;
+          float: left;
+          color: #fff;
+          text-align: center;
+          width: 100%;
+        }
+        .demoPopInfo {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          height: 40px;
+          width: 40px;
+          background: #77ad1b;
+          color: #fff;
+          padding: 0;
+          border-radius: 50%;
+          display: block;
+          cursor: pointer;
+          margin: 0;
+          z-index: 49;
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: 400;
+        }
+        .demoPopInfo img {
+          border-radius: 50%;
+        }
+      </style>
+      <div class="container">
+        <div class="divtimer" id="div-attention">
+          Ad will be in <span id="ticks">5</span> s.
+        </div>
+        <iframe
+          frameborder="0"
+          class="iframeGame"
+          id="iframeGameDesktop"
+          hspace="0"
+          vspace="0"
+          scrolling="none"
+          src="https://asccw.playngonetwork.com/Casino/IframedView?pid=2&amp;gid=lostchapter&amp;lang=en_US&amp;practice=1&amp;channel=desktop&amp;div=flashobject&amp;width=100%25&amp;height=100%25&amp;user=&amp;password=&amp;ctx=&amp;demo=2&amp;brand=&amp;lobby=&amp;rccurrentsessiontime=0&amp;rcintervaltime=0&amp;rcaccounthistoryurl=&amp;rccontinueurl=&amp;rcexiturl=&amp;rchistoryurlmode=&amp;autoplaylimits=0&amp;autoplayreset=0&amp;callback=flashCallback&amp;rcmga=&amp;resourcelevel=0&amp;hasjackpots=False&amp;country=&amp;pauseplay=&amp;playlimit=&amp;selftest=&amp;sessiontime=&amp;coreweburl=https://asccw.playngonetwork.com/&amp;showpoweredby=True"
+          width="100%"
+          height="100%"
+        ></iframe>
+        <div class="reloadPageBlock">
+          <div class="reloadPage_in">
+            <div style="display: none" id="toPlayDemoReload">
+              <p class="reloadPage-text">To play demo Reload page:</p>
+              <a
+                class="reloadPage"
+                href="/en/slots/Cat-Wilde-and-the-Lost-Chapter"
+                >Rload Page</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="aDiv">
+          <div class="divtimer2">
+            Back to demo in <span id="ticks2">15</span> s.
+          </div>
+          <div id="demo-game-a">
+            <!-- XSLT Template -->
+            <div class="outerPlayItemInAd">
+              <div class="innerPlayItemAd">
+                <div class="innerPlayItem_inAd">
+                  <div class="prCasinoLogoBlockAd">
+                    <a
+                      href="/goto?casino_id=590&amp;cISO=LV&amp;bonus_id="
+                      target="_blank"
+                      rel="noopener noreferrer nofollow sponsored"
+                      class="overlay-link"
+                      onclick="gtag('event', 'sc_GameBonusDemo',
+                                    {'sc_lang': 'en', 'sc_cISO': 'LV', 'sc_game': 'Cat-Wilde-and-the-Lost-Chapter', 'sc_casino': 'Mr-Green'});"
+                    >
+                      <div class="prCasinoLogoAd">
+                        <div class="flag">
+                          <img
+                            alt="flag"
+                            loading="lazy"
+                            src="/img/flags/cISO/lv.png"
+                            width="64"
+                            height="64"
+                          />
+                        </div>
+                        <img
+                          src="https://slotcatalog.com/userfiles/image/casino/MrGreen_logo_m.jpg"
+                          loading="lazy"
+                          alt="Mr Green"
+                          title="Mr Green"
+                        />
+                      </div>
+                      <div class="bonusItemTextAd">
+                        <p>Play on Mr Green?</p>
+                      </div>
+                      <p class="battonPlayAd">
+                        <span>Play this game at the casino</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="bonusClaimApplyLineAd">
+                    18+
+                    <a
+                      class="allPromoAd"
+                      rel="noopener noreferrer nofollow"
+                      href="https://www.begambleaware.org"
+                      target="_blank"
+                      >Be Gamble Aware</a
+                    >
+                  </div>
+                  <a
+                    class="otherLinkAd"
+                    href="/en/casino/Mr-Green"
+                    target="_blank"
+                    >Casino review</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var aTimer = {
+          powMultiplier: 2,
+          powMaxMultiplier: 8,
+          getNextTimeout: function () {
+            if (this.powMultiplier > this.powMaxMultiplier) {
+              this.powMultiplier = this.powMaxMultiplier;
+            }
+
+            let nextTimeout = Math.pow(2, this.powMultiplier) * 60 * 1000;
+            // let nextTimeout =  10 * 1000; // test mode - each 10 sec.
+
+            this.powMultiplier++;
+            return nextTimeout;
+          },
+        };
+
+        function dispa() {
+          var counter = 5;
+          var dA = "#aDiv";
+          var dAttention = "#div-attention";
+          var dTicks = "#ticks";
+          var dTicks2 = "#ticks2";
+
+          if (globIsFullScr == 1) {
+            dA = "#aDivFullScr";
+            dAttention = "#div-attentionFullScr";
+            dTicks = "#ticksFullScr";
+            dTicks2 = "#ticks2FullScr";
+          }
+
+          $(dAttention).show(); // display attantion
+          let iTics = setInterval(function () {
+            counter--;
+            $(dTicks).text(counter);
+          }, 1000);
+          setTimeout(function () {
+            clearInterval(iTics);
+            counter = 5;
+            $(dTicks).text(counter);
+            $(dAttention).hide(); // hide attantion position: fixed;  top:0px; left:0px; width:100%; height:100%;
+
+            $(dA).show(); // display main div for Xsec + switch off
+
+            var counter2 = 6;
+            let iTics2 = setInterval(function () {
+              counter2--;
+              $(dTicks2).text(counter2);
+            }, 1000);
+            setTimeout(function () {
+              $(dA).hide(); // hide main div and switch off
+
+              clearInterval(iTics2);
+              counter2 = 6;
+              //get main div !!!
+
+              load_ajax_content_demo_v(
+                "/index.php?ajax=1&blck=demo-game-a&slot_id=19212",
+                "demo-game-a"
+              );
+
+              $(dTicks2).text(counter2);
+
+              let globalTimeout = setTimeout(dispa, aTimer.getNextTimeout());
+            }, 6000);
+          }, 5000);
+        }
+
+        // display divs *6
+        let globalTimeout = setTimeout(dispa, aTimer.getNextTimeout());
+
+        function load_ajax_content_demo_v(url, blck) {
+          blck_param = blck;
+          ajax_request = $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "html",
+            complete: function () {},
+            success: function (data, textS, xhr) {
+              if (xhr.status) {
+                data ? true : (data = "");
+                $("#" + blck_param)
+                  .empty()
+                  .append(data);
+                if (blck == "demo-game-a") {
+                  $("#demo-game-a-popup").empty().append(data);
+                }
+              }
+            },
+          });
+        }
+      </script>
+      <script>
+        globIsFullScr = 0;
+        function setIsFullScr(v) {
+          // setup global var for display
+          globIsFullScr = v;
+          if (v == 1) {
+            // when FullScreen hide iframe with demo game to avoid double sound
+            $("#iframeGameDesktop").remove();
+            $("#toPlayDemoReload").show();
+          }
+        }
+
+        $(document).ready(function () {
+          $(".fancybox-menu").fancybox({
+            fitToView: false,
+            helpers: { overlay: { locked: false } },
+          });
+        });
+        $(document).ready(function () {
+          $(".fancybox-popup").fancybox({
+            fitToView: false,
+            helpers: { overlay: { locked: false } },
+            afterClose: function (instance, current, e) {
+              setIsFullScr(0);
+            },
+          });
+        });
+      </script>
+      <style>
+        .prCasinoLogoBlock_popup {
+          padding: 0 0 10px 0;
+          margin: 0;
+          position: relative;
+          width: 100%;
+          float: left;
+        }
+        .prCasinoLogo_popup .flag {
+          padding: 0;
+          margin: 0 0 -24px 0;
+          height: 20px;
+          width: 20px;
+          float: right;
+        }
+        .prCasinoLogo_popup .flag img {
+          z-index: 3;
+          float: left;
+          margin: 0;
+          padding: 0;
+          height: auto;
+          width: 100%;
+          -webkit-border-radius: 0 !important;
+          -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+        }
+        .prCasinoLogo_popup {
+          height: 70px;
+          width: 70px;
+          margin: 0 0 -60px 5px;
+          padding: 0;
+          float: left;
+          z-index: 3;
+          position: relative;
+        }
+        .prCasinoLogo_popup img {
+          padding: 0;
+          margin: 0;
+          float: left;
+          width: 100%;
+          height: auto;
+          position: relative;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+        }
+        .prCasinoLogoBlock_popup .overlay-link {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        .playRealOut_popup {
+          position: relative;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 10px 0;
+          margin: -25px 0 0 0;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          transition: all 0.2s ease 0s;
+          float: left;
+        }
+        .playReal_popup {
+          position: relative;
+          width: 100%;
+          line-height: 26px;
+          font-size: 24px;
+          font-weight: 600;
+          padding: 15px 0 20px 10px;
+          margin: 0;
+          color: #111111;
+          text-align: center;
+          text-decoration: none;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          float: left;
+          background: rgba(255, 204, 0, 1);
+          background: -moz-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -webkit-gradient(
+            left top,
+            left bottom,
+            color-stop(0%, rgba(255, 204, 0, 1)),
+            color-stop(100%, rgba(244, 173, 31, 1))
+          );
+          background: -webkit-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -o-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -ms-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: linear-gradient(
+            to bottom,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#f4ad1f', GradientType=0 );
+        }
+        .prCasinoLogoBlock_popup .playRealOut_popup .playReal_popup:hover {
+          background: #ffcc00;
+          color: #111111;
+        }
+
+        .playRealOut_popup .playReal_popup .playDesc_popup {
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          float: left;
+          color: #111111;
+          width: 100%;
+        }
+
+        .playRealTCA_popup {
+          font-size: 10px;
+          line-height: 12px;
+          font-weight: 400;
+          padding: 0 0 10px 0;
+          margin: 0 1%;
+          float: left;
+          color: #c2c2c2;
+          width: 98%;
+        }
+        .allPromo_popup {
+          text-decoration: underline;
+          outline: 0;
+          border: 0;
+          color: #c2c2c2;
+        }
+        .allPromo_popup:hover {
+          text-decoration: none;
+          color: #c2c2c2;
+        }
+
+        .full-screen {
+          width: 100%;
+          position: relative;
+          padding: 0;
+          margin: 5px 0;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 48px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #77ad1b url(/img/full-screen.png) 0 100% no-repeat;
+          float: left;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          text-decoration: none;
+        }
+        .full-screen:hover {
+          color: #ffffff;
+          background: #95da1f url(/img/full-screen.png) 0 100% no-repeat;
+          text-decoration: none;
+        }</style
+      ><!-- XSLT Template -->
+
+      <style>
+        .modulDemoGamePopupInfo {
+          padding: 0;
+          margin: 0;
+          width: 480px;
+        }
+        .modulDemoGamePopupInfo-popup {
+          padding: 0;
+          margin: 0;
+          float: left;
+          background: #111;
+          width: 100%;
+        }
+        .modulDemoGamePopupInfo-popup-in {
+          padding: 5px 0 10px 0;
+          margin: 10px 5%;
+          float: left;
+          width: 90%;
+        }
+        .prCasinoLogoBlock_popup {
+          padding: 0 0 10px 0;
+          margin: 0;
+          position: relative;
+          width: 100%;
+          float: left;
+        }
+        .prCasinoLogo_popup .flag {
+          padding: 0;
+          margin: 0 0 -24px 0;
+          height: 20px;
+          width: 20px;
+          float: right;
+        }
+        .prCasinoLogo_popup .flag img {
+          z-index: 3;
+          float: left;
+          margin: 0;
+          padding: 0;
+          height: auto;
+          width: 100%;
+          -webkit-border-radius: 0 !important;
+          -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+        }
+        .prCasinoLogo_popup {
+          height: 70px;
+          width: 70px;
+          margin: 0 0 -60px 5px;
+          padding: 0;
+          float: left;
+          z-index: 3;
+          position: relative;
+        }
+        .prCasinoLogo_popup img {
+          padding: 0;
+          margin: 0;
+          float: left;
+          width: 100%;
+          height: auto;
+          position: relative;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+        }
+        .prCasinoLogoBlock_popup .overlay-link {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+        .playRealOut_popup {
+          position: relative;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 10px 0;
+          margin: -25px 0 0 0;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          transition: all 0.2s ease 0s;
+          float: left;
+        }
+        .playReal_popup {
+          position: relative;
+          width: 100%;
+          line-height: 26px;
+          font-size: 24px;
+          font-weight: 600;
+          padding: 15px 0 20px 10px;
+          margin: 0;
+          color: #111111;
+          text-align: center;
+          text-decoration: none;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          float: left;
+          background: rgba(255, 204, 0, 1);
+          background: -moz-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -webkit-gradient(
+            left top,
+            left bottom,
+            color-stop(0%, rgba(255, 204, 0, 1)),
+            color-stop(100%, rgba(244, 173, 31, 1))
+          );
+          background: -webkit-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -o-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: -ms-linear-gradient(
+            top,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          background: linear-gradient(
+            to bottom,
+            rgba(255, 204, 0, 1) 0%,
+            rgba(244, 173, 31, 1) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#f4ad1f', GradientType=0 );
+        }
+        .prCasinoLogoBlock_popup .playRealOut_popup .playReal_popup:hover {
+          background: #ffcc00;
+          color: #111111;
+        }
+        .playRealOut_popup .playReal_popup .playDesc_popup {
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          float: left;
+          color: #111111;
+          width: 100%;
+        }
+        .playRealTCA_popup {
+          font-size: 10px;
+          line-height: 12px;
+          font-weight: 400;
+          padding: 0 0 10px 0;
+          margin: 0 1%;
+          float: left;
+          color: #c2c2c2;
+          width: 98%;
+        }
+        .allPromo_popup {
+          text-decoration: underline;
+          outline: 0;
+          border: 0;
+          color: #c2c2c2;
+        }
+        .allPromo_popup:hover {
+          text-decoration: none;
+          color: #c2c2c2;
+        }
+        .ptgatc {
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+          font-weight: 400;
+          padding: 15px 0 10px 0;
+          margin: 0;
+          float: left;
+          color: #ffffff;
+          width: 100%;
+        }
+        .full-screen {
+          width: 100%;
+          position: relative;
+          padding: 0 10px 0 50px;
+          margin: 5px 0;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 48px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #77ad1b url(/img/full-screen.png) 0 100% no-repeat;
+          float: left;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          text-decoration: none;
+        }
+        .full-screen:hover {
+          color: #ffffff;
+          background: #95da1f url(/img/full-screen.png) 0 100% no-repeat;
+          text-decoration: none;
+        }
+        .game-not-working {
+          width: 100%;
+          position: relative;
+          padding: 0 10px 0 50px;
+          margin: 5px 0;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 48px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #77ad1b url(/img/game-not-working.png) 0 100% no-repeat;
+          float: left;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          text-decoration: none;
+        }
+        .game-not-working:hover {
+          color: #ffffff;
+          background: #95da1f url(/img/game-not-working.png) 0 100% no-repeat;
+          text-decoration: none;
+        }
+        .all-casinos {
+          width: 100%;
+          position: relative;
+          padding: 0 10px 0 50px;
+          margin: 5px 0;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 48px;
+          text-align: center;
+          text-transform: uppercase;
+          background: #77ad1b url(/img/all-casinos.png) 0 100% no-repeat;
+          float: left;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          text-decoration: none;
+        }
+        .all-casinos:hover {
+          color: #ffffff;
+          background: #95da1f url(/img/all-casinos.png) 0 100% no-repeat;
+          text-decoration: none;
+        }
+        .allPromoAd {
+          color: #77ad1b;
+          text-decoration: underline;
+        }
+        .allPromoAd:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .modulDemoGamePopupInfo {
+            padding: 0;
+            margin: 0;
+            width: 312px;
+          }
+          .full-screen {
+            padding: 0 0 0 30px;
+            margin: 5px 0;
+            font-size: 16px;
+          }
+          .game-not-working {
+            padding: 0 0 0 30px;
+            margin: 5px 0;
+            font-size: 16px;
+          }
+          .all-casinos {
+            padding: 0 0 0 30px;
+            margin: 5px 0;
+            font-size: 16px;
+          }
+          .prCasinoLogo_popup {
+            height: 70px;
+            width: 70px;
+            margin: 0 auto;
+            padding: 0;
+            float: none;
+            z-index: 3;
+            position: relative;
+          }
+        }
+      </style>
+      <div style="display: none">
+        <div id="modulDemoInfo">
+          <div class="modulDemoGamePopupInfo">
+            <div class="modulDemoGamePopupInfo-popup">
+              <div class="modulDemoGamePopupInfo-popup-in">
+                <p class="ptgatc">Best Offer:</p>
+                <!-- XSLT Template -->
+                <div class="prCasinoLogoBlock_popup">
+                  <a
+                    href="/goto?casino_id=590&amp;cISO=LV&amp;bonus_id="
+                    onclick="gtag('event', 'sc_GameBonus',
+                                    {'sc_lang': 'en', 'sc_cISO': 'LV', 'sc_game': 'Cat-Wilde-and-the-Lost-Chapter', 'sc_casino': 'Mr-Green'});"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow sponsored"
+                    class="overlay-link"
+                  >
+                    <div class="prCasinoLogo_popup">
+                      <div class="flag">
+                        <img
+                          src="https://slotcatalog.com/img/flags/cISO/lv.png"
+                          width="24"
+                          height="24"
+                        />
+                      </div>
+                      <img
+                        alt="Mr Green"
+                        title="Mr Green"
+                        src="https://slotcatalog.com/userfiles/image/casino/MrGreen_logo_m.jpg"
+                        width="110"
+                        height="110"
+                      />
+                    </div>
+                    <div class="playRealOut_popup">
+                      <p class="playReal_popup">
+                        <span class="playDesc_popup">Play on</span>
+                      </p>
+                    </div>
+                  </a>
+                  <p class="playRealTCA_popup">
+                    18+ |
+                    <a
+                      class="allPromoAd"
+                      rel="noopener noreferrer nofollow"
+                      href="https://www.begambleaware.org"
+                      target="_blank"
+                      >Be Gamble Aware</a
+                    >
+                  </p>
+                </div>
+                <a
+                  href="#modulDemoGameId"
+                  onclick="setIsFullScr(1)"
+                  class="full-screen fancybox-popup"
+                >
+                  Full screen </a
+                ><a
+                  class="all-casinos"
+                  href="/en/slots/Cat-Wilde-and-the-Lost-Chapter#aCasinoOffers"
+                  title="All Cat Wilde and the Lost Chapter casinos"
+                  target="_blank"
+                  >All Cat Wilde and the Lost Chapter casinos</a
+                ><a
+                  class="game-not-working"
+                  href="/en/Contacts?txt=The+Cat+Wilde+and+the+Lost+Chapter+demo+does+not+work:(+Please+fix+it!"
+                  title="Game not working?"
+                  target="_blank"
+                  >Game not working?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none">
+        <div id="modulDemoGameId">
+          <div class="modulDemoGamePopup">
+            <div class="container-popup">
+              <div class="divtimer" id="div-attentionFullScr">
+                Ad will be in <span id="ticksFullScr">5</span> s.
+              </div>
+              <iframe
+                frameborder="0"
+                class="iframeGame"
+                hspace="0"
+                vspace="0"
+                scrolling="none"
+                src="https://asccw.playngonetwork.com/Casino/IframedView?pid=2&amp;gid=lostchapter&amp;lang=en_US&amp;practice=1&amp;channel=desktop&amp;div=flashobject&amp;width=100%25&amp;height=100%25&amp;user=&amp;password=&amp;ctx=&amp;demo=2&amp;brand=&amp;lobby=&amp;rccurrentsessiontime=0&amp;rcintervaltime=0&amp;rcaccounthistoryurl=&amp;rccontinueurl=&amp;rcexiturl=&amp;rchistoryurlmode=&amp;autoplaylimits=0&amp;autoplayreset=0&amp;callback=flashCallback&amp;rcmga=&amp;resourcelevel=0&amp;hasjackpots=False&amp;country=&amp;pauseplay=&amp;playlimit=&amp;selftest=&amp;sessiontime=&amp;coreweburl=https://asccw.playngonetwork.com/&amp;showpoweredby=True"
+                width="100%"
+                height="100%"
+              ></iframe>
+              <div id="aDivFullScr">
+                <div class="divtimer2FullScr">
+                  Back to demo in <span id="ticks2FullScr">15</span> s.
+                </div>
+                <div id="demo-game-a-popup">
+                  <!-- XSLT Template -->
+                  <div class="outerPlayItemInAd">
+                    <div class="innerPlayItemAd">
+                      <div class="innerPlayItem_inAd">
+                        <div class="prCasinoLogoBlockAd">
+                          <a
+                            href="/goto?casino_id=590&amp;cISO=LV&amp;bonus_id="
+                            target="_blank"
+                            rel="noopener noreferrer nofollow sponsored"
+                            class="overlay-link"
+                            onclick="gtag('event', 'sc_GameBonusDemo',
+                                    {'sc_lang': 'en', 'sc_cISO': 'LV', 'sc_game': 'Cat-Wilde-and-the-Lost-Chapter', 'sc_casino': 'Mr-Green'});"
+                          >
+                            <div class="prCasinoLogoAd">
+                              <div class="flag">
+                                <img
+                                  alt="flag"
+                                  loading="lazy"
+                                  src="/img/flags/cISO/lv.png"
+                                  width="64"
+                                  height="64"
+                                />
+                              </div>
+                              <img
+                                src="https://slotcatalog.com/userfiles/image/casino/MrGreen_logo_m.jpg"
+                                loading="lazy"
+                                alt="Mr Green"
+                                title="Mr Green"
+                              />
+                            </div>
+                            <div class="bonusItemTextAd">
+                              <p>Play on Mr Green?</p>
+                            </div>
+                            <p class="battonPlayAd">
+                              <span>Play this game at the casino</span>
+                            </p>
+                          </a>
+                        </div>
+                        <div class="bonusClaimApplyLineAd">
+                          18+
+                          <a
+                            class="allPromoAd"
+                            rel="noopener noreferrer nofollow"
+                            href="https://www.begambleaware.org"
+                            target="_blank"
+                            >Be Gamble Aware</a
+                          >
+                        </div>
+                        <a
+                          class="otherLinkAd"
+                          href="/en/casino/Mr-Green"
+                          target="_blank"
+                          >Casino review</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-contact footer padding-style">
+      <div class="container">
+        <div
+          class="footer-contacts-menu"
+          style="justify-content: space-between"
+        >
+          <div>
+            <img class="img-logo" src="images/logob.png" />
+          </div>
+
+          <nav class="navbar-wrap">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html">Privacy policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="provisions.html">Main Provisions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="politics.html">Cookie Policy </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="disclaimer.html">Disclaimer</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container footer-text">
+        <hr style="color: #c0c0c0" />
+        <p style="text-align: center; color: white; font-weight: 200">
+          This platform is created for users aged 18 and above, serving as a
+          social gaming hub that provides a range of <br />
+          complimentary casino games for entertainment purposes only. No real
+          currency is involved, and we actively promote <br />
+          responsible gameplay. If you or someone you know is facing gambling
+          issues, we encourage seeking support from <br />
+          appropriate groups. All interactions here are purely recreational, and
+          any in-game currency or items hold no real-world <br />
+          monetary value.
+        </p>
+        <p style="text-align: center; color: white; font-weight: 200">
+          All Rights Reserved bigbassbonanz 18+
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/fancybox-jq.js"></script>
+    <script type="text/javascript" src="js/color.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+      $(".inner--background__black").css(
+        "background-color",
+        hexBackground("#301b3f", 80)
+      );
+      $(".inner--background__black-two").css(
+        "background-color",
+        hexBackground("#3B0944", 80)
+      );
+      let randNum = $("#random").attr("class");
+      if (randNum == 2) {
+        $(".header-navigation").css(
+          "background-color",
+          hexBackground("#301b3f", 90)
+        );
+      }
+
+      function hexBackground(hex, opacity) {
+        hex = hex.replace("#", "");
+        r = parseInt(hex.substring(0, 2), 16);
+        g = parseInt(hex.substring(2, 4), 16);
+        b = parseInt(hex.substring(4, 6), 16);
+
+        result = "rgba(" + r + "," + g + "," + b + "," + opacity / 100 + ")";
+        return result;
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".testimonial-section").slick({
+          arrows: true,
+          slidesToShow: 1,
+          touchThreshold: 10,
+          variableWidth: true,
+          infinite: true,
+          slidesToScrol: 1,
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("burger")
+          .addEventListener("click", function () {
+            document.querySelector("header").classList.toggle("open");
+          });
+      });
+    </script>
+    <script>
+      var openModalBtns = document.getElementsByClassName("open-modal-btn");
+      var modals = document.getElementsByClassName("modal");
+      var closeBtns = document.getElementsByClassName("close");
+
+      function openModal(target) {
+        var modal = document.getElementById(target);
+        modal.style.display = "block";
+      }
+
+      function closeModal() {
+        for (var i = 0; i < modals.length; i++) {
+          modals[i].style.display = "none";
+        }
+      }
+      for (var i = 0; i < openModalBtns.length; i++) {
+        openModalBtns[i].addEventListener("click", function () {
+          closeModal();
+          var target = this.getAttribute("data-target");
+          openModal(target);
+        });
+      }
+
+      for (var i = 0; i < closeBtns.length; i++) {
+        closeBtns[i].addEventListener("click", function () {
+          var target = this.getAttribute("data-target");
+          var modal = document.getElementById(target);
+          modal.style.display = "none";
+        });
+      }
+
+      window.addEventListener("click", function (event) {
+        for (var i = 0; i < modals.length; i++) {
+          if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+          }
+        }
+      });
+    </script>
+
+    <style>
+      .floating-windows-S2ZBY {
+        display: none;
+        position: fixed;
+        bottom: 0px;
+        width: 90%;
+        max-width: 1159px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        background-color: #3f3f3f;
+        border-radius: 0px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+        gap: 21px;
+        z-index: 99999;
+        padding: 21px;
+        text-align: center;
+      }
+      .floating-windows-S2ZBY a {
+        color: #ffd600;
+      }
+      .floating-windows-box-S2ZBY {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+      }
+      .button-S2ZBY {
+        margin: 15px;
+        position: relative;
+        display: inline-block;
+        padding: 16px 28px;
+        font-weight: bold;
+        border: 1px solid #3b0944;
+        color: #0f172a;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ffd600;
+        border-radius: 40px;
+        overflow: hidden;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 14px;
+        width: auto;
+      }
+
+      .button-S2ZBY:hover {
+        background-color: #3b0944;
+        color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      .modal-S2ZBY {
+        overflow-y: auto;
+        display: none;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content-S2ZBY {
+        color: #fff;
+        background-color: #2b2b2b;
+        padding: 20px;
+        max-width: 700px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+        margin: 10% auto;
+        position: relative;
+      }
+
+      .modal-close-S2ZBY {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      .accordion-S2ZBY {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .accordion-header-S2ZBY {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .accordion-icon-S2ZBY {
+        position: absolute;
+        right: 0;
+        margin: 10px;
+        color: #090057;
+        font-weight: bold;
+      }
+
+      .accordion-header-S2ZBY input[type="checkbox"],
+      input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 2.1rem !important;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid #4f565d;
+        background: #fff;
+        transition: background 0.3s, border-color 0.3s, outline 0.2s;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:after,
+      input[type="radio"]:after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform 0.3s ease, opacity 0.2s;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:checked,
+      input[type="radio"]:checked {
+        background-color: #090057;
+        border-color: #090057;
+        transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.32, 1.2),
+          opacity 0.3s;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:disabled,
+      input[type="radio"]:disabled {
+        background-color: #090057;
+        border-color: #090057;
+        cursor: not-allowed;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:disabled:checked,
+      input[type="radio"]:disabled:checked {
+        background-color: #090057;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:disabled + label,
+      input[type="radio"]:disabled + label {
+        cursor: not-allowed;
+      }
+      .accordion-header-S2ZBY
+        input[type="checkbox"]:hover:not(:checked):not(:disabled),
+      input[type="radio"]:hover:not(:checked):not(:disabled) {
+        border-color: #090057;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:focus-visible,
+      input[type="radio"]:focus-visible {
+        outline: 2px solid #090057;
+        outline-offset: 4px;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:not(.switch-S2ZBY),
+      input[type="radio"]:not(.switch-S2ZBY) {
+        width: 2.1rem;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"] + label,
+      input[type="radio"] + label {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1.4rem;
+        margin-left: 0.2em;
+        vertical-align: top;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:not(.switch-S2ZBY) {
+        border-radius: 0.7rem;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"]:not(.switch-S2ZBY):after {
+        border: 2px solid #fff;
+        height: 45%;
+        width: 25%;
+        border-top: 0;
+        border-left: 0;
+        left: 38%;
+        top: 20%;
+        transform: rotate(20deg);
+      }
+      .accordion-header-S2ZBY
+        input[type="checkbox"]:not(.switch-S2ZBY):disabled:not(:checked):after {
+        border-color: #090057;
+      }
+      .accordion-header-S2ZBY
+        input[type="checkbox"]:not(.switch-S2ZBY):checked:after {
+        transform: rotate(43deg);
+      }
+      input[type="checkbox"].switch-S2ZBY {
+        width: 3.8rem;
+        border-radius: 1.1rem;
+      }
+      .accordion-header-S2ZBY input[type="checkbox"].switch-S2ZBY:after {
+        left: 5%;
+        top: 10%;
+        border-radius: 50%;
+        width: 45%;
+        height: 80%;
+        background: #4f565d;
+        transform: translateX(0);
+      }
+      .accordion-header-S2ZBY
+        input[type="checkbox"].switch-S2ZBY:checked:after {
+        background: #f6f8ff;
+        transform: translateX(100%);
+      }
+      .accordion-header-S2ZBY
+        input[type="checkbox"].switch-S2ZBY:disabled:not(:checked):after {
+        background-color: #090057;
+      }
+      .accordion-header-S2ZBY input[type="radio"] {
+        border-radius: 50%;
+      }
+      .accordion-header-S2ZBY input[type="radio"]:after {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #fff;
+        transform: scale(0.7);
+      }
+      .accordion-header-S2ZBY input[type="radio"]:disabled:after {
+        background: #090057;
+      }
+      .accordion-header-S2ZBY input[type="radio"]:checked:after {
+        transform: scale(0.5);
+      }
+      .accordion-body-S2ZBY {
+        padding: 10px;
+        display: none;
+      }
+
+      .button-box-S2ZBY {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 9px;
+        margin-top: 12px;
+      }
+      .cookie-text-S2ZBY {
+        font-size: 14px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      form > input {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        width: 317px;
+        height: 65px;
+        padding-left: 15px;
+        color: #fff;
+      }
+      form > button {
+        background-color: #ffd600;
+        border: 1px solid;
+        border-radius: 15px;
+        width: 317px;
+        height: 50px;
+        color: #2b2b2b;
+      }
+      @media (max-width: 1024px) {
+        .floating-windows-box-S2ZBY {
+          flex-direction: column;
+        }
+        .cookie-text-S2ZBY {
+          width: 100% !important;
+        }
+        .button-S2ZBY {
+          margin-bottom: 0px;
+          padding: 5px 15px;
+        }
+        .buttons-S2ZBY button:first-child {
+          margin-top: 0px;
+        }
+      }
+      @media (max-width: 576px) {
+        .buttons-S2ZBY button:nth-child(2) {
+          display: none;
+        }
+        .buttons-S2ZBY {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          justify-content: center;
+        }
+        .button-S2ZBY {
+          margin: 0px;
+          font-size: 11px;
+        }
+        .cookie-text-S2ZBY {
+          font-size: 11px;
+        }
+      }
+      @media (max-width: 380px) {
+        .buttons-S2ZBY {
+          flex-wrap: wrap;
+        }
+      }
+      footer {
+        display: none;
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const floatingWindow = document.querySelector(
+          ".floating-windows-S2ZBY"
+        );
+        const allowAllCookieButton = document.getElementById(
+          "allow-all-cookie-S2ZBY"
+        );
+        const rejectAllButton = document.getElementById("reject-all-S2ZBY");
+        const cookieSettingsButton = document.getElementById(
+          "cookie-settings-text-S2ZBY"
+        );
+        const modal = document.getElementById("modal-S2ZBY");
+        var allow_btn = document.getElementById("allow-all-cookie-S2ZBY");
+        var cookie_modal = document.getElementById("cookie-modal");
+
+        // Добавить обработчик события на клик по кнопке
+        allow_btn.addEventListener("click", function () {
+          // Установить свойство display: none для div
+          cookie_modal.style.display = "none";
+          localStorage.setItem("windowClosed", "true");
+        });
+
+        cookieSettingsButton.addEventListener("click", function () {
+          modal.style.display = "block";
+        });
+        const modalClose = document.getElementById("modal-close-S2ZBY");
+
+        const switchCheckboxes = document.querySelectorAll(".switch-S2ZBY");
+
+        const allCookiesAccepted = localStorage.getItem("allCookiesAccepted");
+        if (allCookiesAccepted === "true") {
+          switchCheckboxes.forEach(function (checkbox) {
+            checkbox.checked = true;
+          });
+        }
+
+        const isWindowClosed = localStorage.getItem("windowClosed");
+        if (isWindowClosed === "true") {
+          floatingWindow.style.display = "none";
+        }
+        if (localStorage.getItem("windowClosed") === null) {
+          floatingWindow.style.display = "block";
+        }
+
+        modalClose.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        allowAllCookieButton.addEventListener("click", function () {
+          floatingWindow.style.display = "none";
+          localStorage.setItem("windowClosed", "true");
+          modal.style.display = "none";
+        });
+
+        rejectAllButton.addEventListener("click", function () {
+          floatingWindow.style.display = "none";
+          localStorage.setItem("windowClosed", "true");
+        });
+
+        cookieSettingsButton.addEventListener("click", function () {
+          modal.style.display = "block";
+        });
+
+        const accordions = document.querySelectorAll(".accordion-header-S2ZBY");
+        accordions.forEach(function (accordion) {
+          const body = accordion.nextElementSibling;
+          const icon = accordion.querySelector(".accordion-icon-S2ZBY");
+
+          accordion.addEventListener("click", function () {
+            accordions.forEach(function (otherAccordion) {
+              if (otherAccordion !== accordion) {
+                otherAccordion.nextElementSibling.style.display = "none";
+                otherAccordion.querySelector(
+                  ".accordion-icon-S2ZBY"
+                ).innerHTML = "∨";
+              }
+            });
+
+            if (body.style.display === "none" || body.style.display === "") {
+              body.style.display = "block";
+              icon.innerHTML = "∧";
+            } else {
+              body.style.display = "none";
+              icon.innerHTML = "∨";
+            }
+          });
+
+          if (body.style.display === "block") {
+            icon.innerHTML = "∧";
+          } else {
+            icon.innerHTML = "∨";
+          }
+        });
+
+        const saveCurrentSettingsButton = document.getElementById(
+          "save-current-settings-S2ZBY"
+        );
+
+        saveCurrentSettingsButton.addEventListener("click", function () {
+          modal.style.display = "none";
+          localStorage.setItem("windowClosed", "true");
+          floatingWindow.style.display = "none";
+        });
+      });
+
+      const floatingBox = document.querySelector(`.floating-windows-box-S2ZBY`);
+      const cookieText = document.querySelector(`.cookie-text-S2ZBY`);
+
+      if (floatingBox) {
+        const computedStyle = window.getComputedStyle(floatingBox);
+        if (computedStyle.flexDirection === "row") {
+          cookieText.style.width = "80%";
+        } else if (computedStyle.flexDirection === "column") {
+          cookieText.style.width = "100%";
+        }
+      }
+    </script>
+  </body>
+</html>
